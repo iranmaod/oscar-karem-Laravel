@@ -1,0 +1,9 @@
+- Create a command that run after every 1 hour
+- Create a queue of transaction that needs to be executed
+- Create a column for next transaction date, original_transaction
+- Reset retries in payment after successful transaction
+- After 5 retries set order status to pending installments.
+
+
+
+php artisan make:command TriggerInstallment

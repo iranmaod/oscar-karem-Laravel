@@ -1,0 +1,178 @@
+.oscar-karem-auth-logo, .oscar-karem-frontend-logo {
+
+  max-width: 200px;
+
+  display: block;
+
+  margin: 0 auto;
+
+}
+.oscar-karem-auth-logo img, .oscar-karem-frontend-logo img{
+
+  max-width: 100%;
+
+}
+.hs-ok-navbar-bg{
+
+  background: #2C2930;
+
+}
+body.sidebar-mini .main-sidebar .sidebar-menu > li.active .hs-ok-dropdown-menu {
+  display: none!important;
+}
+.hs-ok-content .form-row .hs-ok-search-submit {
+  position: absolute;
+  width: 130px;
+  right: 0;
+  margin-bottom: 0;
+  top: 0px;
+}
+.hs-ok-content .form-row.hs-ok-contact-search-wrap {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+.hs-ok-contact-search-wrap .hs-ok-search-submit .btn.form-control {
+  border-radius: 0 .25rem .25rem 0;
+  line-height: 1.4;
+}
+.hs-ok-content .form-group > label {
+  font-weight: 700;
+  min-height: 14px;
+}
+.hs-ok-content .form-row>[class*=col-].hs-ok-search-input {
+  padding-right: 120px;
+}
+.hs-ok-search-reset label.control-label {
+  display: none;
+}
+
+.hs-ok-search-reset .btn.form-control {
+  width: auto;
+  line-height: 1.4;
+  padding: 10px 40px;
+}
+.hs-ok-content .btn:not(.btn-social):not(.btn-social-icon):hover {
+  border-color: #22045b!important;
+}
+.form-inline.hs-ok-data-per-page {
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
+.hs-ok-data-table-search input {
+  max-width: 420px;
+}
+
+.col.hs-ok-data-table-search {
+  padding-left: 0;
+}
+.hs-ok-data-table-action .hs-ok-button-view, .hs-ok-data-table-action .hs-ok-button-edit, .hs-ok-data-table-action .hs-ok-button-delete {  
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 0.25rem;
+  background: #7d55c7;
+}
+
+.hs-ok-data-table-action .hs-ok-button-delete{
+  background-color: #f00;
+}
+.hs-ok-action-button .fa {
+  border-color: #fff;
+  color: #fff;
+}
+.hs-ok-data-table-action a:hover {
+  opacity: .8;
+  text-decoration: none;
+}
+.hs-ok-total, .deals-calculated-amount, .deals-calculated-commission {
+  font-weight: bold;
+}
+.hs-ok-filter-wrap .form-row {
+  width: 100%;
+}
+.hs-ok-deal-overview-wrap .table-responsive table tbody {
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+}
+.table-striped tbody tr.hs-ok-deals-footer {
+  border-top: 2px solid #7d55c7;
+}
+
+
+/* .table-striped tbody tr.hs-ok-deals-footer {
+  background: #7d55c7;
+}
+.table-striped tbody tr.hs-ok-deals-footer {
+  background: #7d55c7;
+}
+
+.hs-ok-total, .deals-calculated-amount, .deals-calculated-commission {
+  color: #fff;
+}
+
+.deals-calculated-commission .text-primary {
+  color: #fff!important;
+} */
+@media(max-width:575px){
+  .form-inline.hs-ok-data-per-page .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.hs-ok-agent-overview-button.form-group .control-label {
+  min-height: inherit;
+}
+.hs-ok-content .hs-ok-agent-overview-button.form-group label {
+  display: none;
+}
+}
+@media(max-width:479px){
+  .hs-ok-content .form-row .hs-ok-search-submit {
+    position: static;
+    padding: 0;
+    width: 100%;
+}
+.hs-ok-contact-search-wrap .hs-ok-search-submit .btn.form-control {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.hs-ok-content .form-row>[class*=col-].hs-ok-search-input {
+  margin-bottom: 0;
+  padding: 0;
+}
+.form-group.hs-ok-search-reset {
+  padding: 0;
+}
+
+.hs-ok-search-reset .btn.form-control {
+  width: 100%;
+  margin-top: 15px;
+}
+.hs-ok-content .form-row {
+  margin: 0 auto;
+}
+.hs-ok-content .flex {
+  margin: 0 auto;
+  width: 100%;
+} 
+.form-inline.hs-ok-data-per-page .form-control {
+  width: 100%;
+}
+
+.col.hs-ok-data-table-search, .form-inline.hs-ok-data-per-page {
+  width: 100%;
+  flex-grow: initial;
+  flex-basis: auto;
+  margin-bottom: 15px;
+  justify-content: flex-start;
+  padding: 0;
+}
+.form-inline.hs-ok-data-per-page {margin-bottom: 0;}
+}

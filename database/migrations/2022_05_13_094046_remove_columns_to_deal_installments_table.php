@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class RemoveColumnsToDealInstallmentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+      Schema::rename('order_installments', 'deal_installments');
+      Schema::table('deal_installments', function (Blueprint $table) {
+          $table->dropColumn('due_date');
+          $table->dropColumn('order_status_id');
+      });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+      Schema::rename('deal_installments', 'order_installments');
+      Schema::table('order_installments', function (Blueprint $table) {
+        $table->datetime('due_date');
+        $table->integer('order_status_id')->default(1);
+      });
+    }
+}
